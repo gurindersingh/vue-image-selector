@@ -110,7 +110,10 @@
                             this.image = event.target.result;
                             this.$emit('image-selected', {image: this.image})
                         } else {
-                            flash(this.errorsHtml(), 'error', 5000);
+
+                            if(typeof flash === 'function') {
+                                flash(this.errorsHtml(), 'error', 5000);
+                            }
                             this.errors = [];
                             this.imageObject = null;
                         }
