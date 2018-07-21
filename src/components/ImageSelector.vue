@@ -105,7 +105,7 @@
                     this.imageObject = new Image();
 
                     this.imageObject.onload = () => {
-
+                        
                         if (this.validateImage(this.imageObject, file.size)) {
                             this.image = event.target.result;
                             this.$emit('image-selected', {image: this.image})
@@ -127,10 +127,10 @@
             },
 
             validateImage(image, size) {
-                let maxSize = this.maxSize * 1024 * 1024;
+                let maxSize = this.maxSizeInMb * 1024 * 1024;
 
                 if (size <= 0 || size > maxSize) {
-                    this.errors.push("Maximum Upload size is " + this.maxSize + "MB")
+                    this.errors.push("Maximum Upload size is " + this.maxSizeInMb + "MB")
                 }
 
                 if (this.maxWidth && this.imageObject.width > this.maxWidth) {

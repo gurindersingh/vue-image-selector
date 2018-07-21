@@ -105,12 +105,12 @@ __webpack_require__.r(__webpack_exports__);
 // EXTERNAL MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
 var setPublicPath = __webpack_require__("HrLf");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"/Users/gurinder/Sites/@gurinder/vue-image-selector/node_modules/.cache/vue-loader","cacheIdentifier":"386c0301-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ImageSelector.vue?vue&type=template&id=4f3a8b2f&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"/Users/gurinder/Sites/@gurinder/vue-image-selector/node_modules/.cache/vue-loader","cacheIdentifier":"386c0301-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/ImageSelector.vue?vue&type=template&id=464ff1ef&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"bgc-white p-3",staticStyle:{"max-width":"100%"}},[_c('div',{staticClass:"w-100 d-f ai-c jc-c"},[_c('div',{staticClass:"d-block p-rel w-100"},[_c('img',{directives:[{name:"show",rawName:"v-show",value:(_vm.imageUrl),expression:"imageUrl"}],staticClass:"mb-3",staticStyle:{"max-width":"100%","width":"100%"},attrs:{"src":_vm.imageUrl}}),_c('div',{staticClass:"d-f jc-c"},[_c('button',{directives:[{name:"show",rawName:"v-show",value:(! _vm.imageUrl),expression:"! imageUrl"}],staticClass:"btn btn-sm d-f ai-c p-3 cur-p mt-1 fc:shadow-none bd hv:shadow",attrs:{"type":"button"},on:{"click":function($event){$event.preventDefault();_vm.openSelector()}}},[_c('svg',{attrs:{"viewBox":"0 0 24 24","width":"20","height":"20"}},[_c('path',{attrs:{"d":"M19 2h-14c-1.7 0-3 1.3-3 3v14c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-14c0-1.7-1.3-3-3-3zM4 5c0-0.6 0.4-1 1-1h14c0.6 0 1 0.4 1 1v7.6l-3.3-3.3c-0.4-0.4-1-0.4-1.4 0l-10.6 10.6c-0.4-0.1-0.7-0.5-0.7-0.9v-14zM19 20h-11.6l8.6-8.6 4 4v3.6c0 0.6-0.4 1-1 1z"}}),_c('path',{attrs:{"d":"M8.5 11c1.4 0 2.5-1.1 2.5-2.5s-1.1-2.5-2.5-2.5-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5zM8.5 8c0.3 0 0.5 0.2 0.5 0.5s-0.2 0.5-0.5 0.5-0.5-0.2-0.5-0.5 0.2-0.5 0.5-0.5z"}})])]),_c('button',{directives:[{name:"show",rawName:"v-show",value:(_vm.imageUrl),expression:"imageUrl"}],staticClass:"btn btn-sm d-f ai-c p-3 cur-p mt-1 fc:shadow-none bd hv:shadow",attrs:{"type":"button"},on:{"click":function($event){$event.preventDefault();_vm.openSelector()}}},[_c('svg',{attrs:{"width":"20","height":"20","viewBox":"0 0 24 24"}},[_c('path',{attrs:{"d":"M21.7 7.3l-5-5c-0.4-0.4-1-0.4-1.4 0l-13 13c-0.2 0.2-0.3 0.4-0.3 0.7v5c0 0.6 0.4 1 1 1h5c0.3 0 0.5-0.1 0.7-0.3l13-13c0.4-0.4 0.4-1 0-1.4zM7.6 20h-3.6v-3.6l12-12 3.6 3.6-12 12z"}})])])])]),_c('input',{ref:"fileField",staticStyle:{"display":"none"},attrs:{"type":"file","name":_vm.name,"accept":_vm.validMime},on:{"change":function($event){_vm.preview($event.target.files[0])}}})])])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/ImageSelector.vue?vue&type=template&id=4f3a8b2f&
+// CONCATENATED MODULE: ./src/components/ImageSelector.vue?vue&type=template&id=464ff1ef&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/web.dom.iterable.js
 var web_dom_iterable = __webpack_require__("rGqo");
@@ -241,10 +241,10 @@ var es6_number_constructor = __webpack_require__("xfY5");
       reader.readAsDataURL(file);
     },
     validateImage: function validateImage(image, size) {
-      var maxSize = this.maxSize * 1024 * 1024;
+      var maxSize = this.maxSizeInMb * 1024 * 1024;
 
       if (size <= 0 || size > maxSize) {
-        this.errors.push("Maximum Upload size is " + this.maxSize + "MB");
+        this.errors.push("Maximum Upload size is " + this.maxSizeInMb + "MB");
       }
 
       if (this.maxWidth && this.imageObject.width > this.maxWidth) {

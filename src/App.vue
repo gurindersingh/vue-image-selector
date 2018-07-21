@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <HelloWorld/>
+    <image-selector/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import ImageSelector from './components/ImageSelector.vue'
 
 export default {
-  name: 'App',
+  name: 'app',
   components: {
-    HelloWorld
+    ImageSelector
   }
 }
 </script>
