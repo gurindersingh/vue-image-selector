@@ -19,7 +19,7 @@
     "lint": "vue-cli-service lint",
     "pack": "vue-cli-service build --target lib --name VueImageSelector ./src/components/ImageSelector.vue"
   },
-  "main": "./dist/VueImageSelector.common.js",
+  "main": "src/components/ImageSelector.vue",
   "files": [
     "dist/*.js",
     "dist/*.js.map",
